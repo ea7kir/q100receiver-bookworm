@@ -1,0 +1,4 @@
+# ignore executable binary
+q100receiver
+# ignore tests
+*.test

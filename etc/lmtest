@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/pi/Q100/longmynd/
+# /home/pi/Q100/longmynd/longmynd -S 0.6 741500 1500 > /dev/null 2>&1 &
+/home/pi/Q100/longmynd/longmynd -S 0.6 741500 1500 &
