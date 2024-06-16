@@ -20,13 +20,15 @@ if [ $? != 0 ]; then
 fi
 
 while true; do
-   read -p "Install q100receiver using Go version $GOVERSION (y/n)? " answer
+   read -p "Install q100receiver-bookworm using Go version $GOVERSION (y/n)? " answer
    case ${answer:0:1} in
        y|Y ) break;;
        n|N ) exit;;
        * ) echo "Please answer yes or no.";;
    esac
 done
+
+###################################################
 
 ###################################################
 
@@ -39,7 +41,7 @@ sudo apt clean
 ###################################################
 
 echo Installing Git
-sudo apt -y install git
+#sudo apt -y install git
 
 ###################################################
 
@@ -97,7 +99,7 @@ echo Installing gioui tools
 ###################################################
 
 echo Install the No Video caption
-sudo cp /home/pi/Q100/q100receiver/etc/NoVideo.jpg /usr/share/rpd-wallpaper
+sudo cp /home/pi/Q100/q100receiver-bookworm/etc/NoVideo.jpg /usr/share/rpd-wallpaper
 
 ###################################################
 
@@ -118,10 +120,10 @@ cd
 
 ###################################################
 
-# echo Copying q100receiver.service
-# cd /home/pi/Q100/q100receiver/etc
-# sudo cp q100receiver.service /etc/systemd/system/
-# sudo chmod 644 /etc/systemd/system/q100receiver.service
+# echo Copying q100receiver-bookworm.service
+# cd /home/pi/Q100/q100receiver-bookworm/etc
+# sudo cp q100receiver-bookworm.service /etc/systemd/system/
+# sudo chmod 644 /etc/systemd/system/q100receiver-bookworm.service
 # sudo systemctl daemon-reload
 # cd
 
@@ -152,7 +154,7 @@ INSTALL HAS COMPLETED
 
     Now execute the following commands
     
-    cd Q100/q100receiver
+    cd Q100/q100receiver-bookworm
     go mod tidy
     go build .
  
