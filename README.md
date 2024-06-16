@@ -43,9 +43,10 @@ WARNING: the Pi may reboot during the install, so please allow it to complete
 ```
 ssh pi@rxtouch.local
 
+sudo apt install git
 mkdir /home/pi/Q100
 cd /home/pi/Q100
-git clone https://github.com/ea7kir/q100receiver.git
+git clone https://github.com/ea7kir/q100receiver-bookworm.git
 
 chmod +x /home/pi/Q100/q100receiver/etc/install.sh
 /home/pi/Q100/q100receiver/etc/install.sh
