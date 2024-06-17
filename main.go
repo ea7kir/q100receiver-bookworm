@@ -28,9 +28,9 @@ import (
 	"os"
 	"os/exec"
 	"os/signal"
-	"q100receiver/lmClient"
-	"q100receiver/rxControl"
-	"q100receiver/spectrumClient"
+	"q100receiver-bookworm/lmClient"
+	"q100receiver-bookworm/rxControl"
+	"q100receiver-bookworm/spectrumClient"
 	"time"
 
 	"github.com/ea7kir/qLog"

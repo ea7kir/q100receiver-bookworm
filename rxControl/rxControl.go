@@ -6,8 +6,8 @@
 package rxControl
 
 import (
-	"q100receiver/lmClient"
-	"q100receiver/spectrumClient"
+	"q100receiver-bookworm/lmClient"
+	"q100receiver-bookworm/spectrumClient"
 
 	"github.com/ea7kir/qLog"
 )

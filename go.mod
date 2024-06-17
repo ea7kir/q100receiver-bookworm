@@ -1,4 +1,4 @@
-module q100receiver
+module q100receiver-bookworm
 
 // updated to GO 1.22 on March 2 2024
 // updated to gioui v0.6.1 on April 30 2024
