@@ -34,8 +34,8 @@ done
 
 echo Update Pi OS
 sudo apt update
-sudo apt full-upgrade -y
-sudo apt autoremove -y
+sudo apt -y full-upgrade
+sudo apt -y autoremove
 sudo apt clean
 
 ###################################################
@@ -46,7 +46,7 @@ echo Installing Git
 ###################################################
 
 echo Install a minmal Desktop
-sudo apt install raspberrypi-ui-mods -y
+sudo apt -y install raspberrypi-ui-mods
 
 ##################################################
 
@@ -90,22 +90,22 @@ sudo tar -C /usr/local -xzf $GOFILE
 cd
 
 echo Installing gioui dependencies
-sudo apt install pkg-config libwayland-dev libx11-dev libx11-xcb-dev libxkbcommon-x11-dev libgles2-mesa-dev libegl1-mesa-dev libffi-dev libxcursor-dev libvulkan-dev -y
+sudo apt -y install pkg-config libwayland-dev libx11-dev libx11-xcb-dev libxkbcommon-x11-dev libgles2-mesa-dev libegl1-mesa-dev libffi-dev libxcursor-dev libvulkan-dev
 
 echo Installing gioui tools
 # currently, allow 'go mod tidy' to instal gioui v0.6.1
-/usr/local/go/bin/go install gioui.org/cmd/gogio@latest
+#/usr/local/go/bin/go install gioui.org/cmd/gogio@latest
 
 ###################################################
 
 echo Install the No Video caption
-sudo cp /home/pi/Q100/q100receiver-bookworm/etc/NoVideo.jpg /usr/share/rpd-wallpaper
+#sudo cp /home/pi/Q100/q100receiver-bookworm/etc/NoVideo.jpg /usr/share/rpd-wallpaper
 
 ###################################################
 
 echo Install longmynd dependencies
 #sudo apt install make gcc libusb-1.0-0-dev libasound2-dev
-sudo apt install libusb-1.0-0-dev libasound2-dev -y
+sudo apt -y install libusb-1.0-0-dev libasound2-dev
 
 ###################################################
 
