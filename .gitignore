@@ -1,4 +1,4 @@
 # ignore executable binary
-q100receiver
+q100receiver-bookworm
 # ignore tests
 *.test
