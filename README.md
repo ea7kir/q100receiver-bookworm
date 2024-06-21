@@ -15,11 +15,11 @@ $${\color{red}WARNING:\space ALL\space DEVELOPMENT\space TAKES\space PLACE\space
 ## Connections
 TODO: add more details and photos
 ## Installing
-NOTE: CURRENTLY REQUIRES PI OS BOOKWORM LITE 64-BIT
+NOTE: CURRENTLY REQUIRES PI OS BOOKWORM DESKTOP 64-BIT
 
 ### Using Raspberry Pi Imager v1.8.5:
 ```
-CHOOSE OS: Raspberry Pi OS (other) -> Raspberry Pi OS Lite (64-bit)
+Select Raspberry Pi 4 and Raspberry Pi OS (64-bit)
 
 CONFIGURE:
 	Set hostname:			rxtouch
