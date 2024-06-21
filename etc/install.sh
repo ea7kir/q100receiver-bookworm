@@ -40,13 +40,13 @@ sudo apt clean
 
 ###################################################
 
-echo Installing Git
-#sudo apt -y install git
+# echo Installing Git
+# sudo apt -y install git
 
 ###################################################
 
-echo Install a minmal Desktop
-sudo apt -y install raspberrypi-ui-mods
+# echo Install a minmal Desktop
+# sudo apt -y install raspberrypi-ui-mods
 
 ##################################################
 
@@ -94,12 +94,13 @@ sudo apt -y install pkg-config libwayland-dev libx11-dev libx11-xcb-dev libxkbco
 
 echo Installing gioui tools
 # currently, allow 'go mod tidy' to instal gioui v0.6.1
-#/usr/local/go/bin/go install gioui.org/cmd/gogio@latest
+/usr/local/go/bin/go install gioui.org/cmd/gogio@latest
 
 ###################################################
 
 echo Install the No Video caption
 #sudo cp /home/pi/Q100/q100receiver-bookworm/etc/NoVideo.jpg /usr/share/rpd-wallpaper
+sudo cp /home/pi/Q100/q100receiver-bookworm/etc/NoVideo.jpg /usr/share/rpd-wallpaper
 
 ###################################################
 
@@ -129,7 +130,7 @@ cd
 
 ###################################################
 
-chmod -x /home/pi/Q100/etc/install.sh # to prevent it from being run a second time
+chmod -x /home/pi/Q100/q100receiver-bookworm/etc/install.sh # to prevent it from being run a second time
 
 echo "
 INSTALL HAS COMPLETED
