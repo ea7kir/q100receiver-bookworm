@@ -4,6 +4,7 @@
 # Orignal design by Michael, EA7KIR
 
 # updated to GO 1.22 on March 2 2024
+# updated to Bookworm on June
 
 GOVERSION=1.22.2
 
