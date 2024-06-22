@@ -106,7 +106,7 @@ func main() {
 
 	qLog.Info("----- q100receiver Opened -----")
 
-	// os.Setenv("DISPLAY", ":0") // required for X11
+	os.Setenv("WAYLAND_DISPLAY", ":0")
 
 	spectrumClient.Intitialize(spConfig, spChannel)
 
