@@ -106,7 +106,8 @@ func main() {
 
 	qLog.Info("----- q100receiver Opened -----")
 
-	os.Setenv("WAYLAND_DISPLAY", ":0")
+	// os.Setenv("WAYLAND_DISPLAY", ":0")		// this work
+	os.Setenv("WAYLAND_DISPLAY", "wayland-1") // this work - also from ssh cli
 
 	spectrumClient.Intitialize(spConfig, spChannel)
 

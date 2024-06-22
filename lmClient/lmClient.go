@@ -805,6 +805,7 @@ func startFfplay() {
 	if !isPlaying && !ffPlayIsACtive {
 		qLog.Info("ffplay will start...")
 		ffPlayCmd = exec.Command("/usr/bin/ffplay", "-left", "800", "-fs", "-volume", fpcfg.Volume, "-i", fpcfg.TsFifo)
+		// ffPlayCmd = exec.Command("/usr/bin/ffplay", "-fs", "-volume", fpcfg.Volume, "-i", fpcfg.TsFifo)
 		if err := ffPlayCmd.Start(); err != nil {
 			qLog.Error("failed to start ffplay: %v", err)
 			return
