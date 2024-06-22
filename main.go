@@ -106,7 +106,7 @@ func main() {
 
 	qLog.Info("----- q100receiver Opened -----")
 
-	os.Setenv("DISPLAY", ":0") // required for X11
+	// os.Setenv("DISPLAY", ":0") // required for X11
 
 	spectrumClient.Intitialize(spConfig, spChannel)
 
@@ -116,7 +116,7 @@ func main() {
 
 	go func() {
 		// w := app.NewWindow(app.Fullscreen.Option())
-		// app.Size(800, 480) // I don't know if this is help in any way
+		app.Size(800, 480) // I don't know if this is help in any way
 		var w app.Window
 		w.Option(app.Fullscreen.Option())
 
